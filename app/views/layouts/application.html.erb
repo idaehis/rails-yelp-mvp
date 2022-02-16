@@ -11,6 +11,24 @@
   </head>
 
   <body>
+  <div class="container ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarText">
+        <div class="nav-item active">
+          <a class="nav-link" href="#"><%= link_to "All restaurants", restaurants_path %> <span class="sr-only">(current)</span></a>
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#"><%= link_to "Add a restaurant", new_restaurant_path %></a>
+        </div>
+      <span class="navbar-text">
+        Navbar text with an inline element
+      </span>
+    </div>
+  </nav>
+  </div>
     <%= yield %>
   </body>
 </html>
